@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- br: break line -->
+    <input id="inputAge" type="text" placeholder="나이를 입력해주세요." value="31"><br>
+    <input id="resultAge" type="text" placeholder="나이를 입력해주세요." value="31"><br>
+    <!-- hr: horizental ruler -->
+    <hr>
+    <button onclick="showAge()">클릭</button>
+
+    <script>
+        function showAge() {
+            var age = document.getElementById("inputAge").value;
+            // age 라는 변수에 inputAge 아이디의 창에 입력되어있는 값을 넣는다.
+            // alert(age + "살입니다.");
+            document.getElementById("resultAge").value = age;
+        }
+    </script>
+    
+</body>
+</html>

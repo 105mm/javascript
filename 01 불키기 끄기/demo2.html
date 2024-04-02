@@ -6,7 +6,7 @@
     <title>홍길동</title>
     <style>
         button {
-            color: aqua;
+            color:aqua;
             background-color: red;
         }
     </style>
@@ -14,30 +14,29 @@
 <body>
     <button onclick="lightOn()">켜기</button>
     <button onclick="lightOff()">끄기</button>
-    <img src="light_off.png" onclick="alert('홍길동')" id="imgLight">  
+    <img src="light_off.png" onclick="alert('버튼을 누르세요')" id="imgLight">
 
     <script>
-        // 켜기 버튼 클릭시 켜진 이미지로 변경 (1줄 주석) 
+        // 끄기 버튼 클릭시 켜진 이미지로 변경
         function lightOn() {
             x = document.getElementById("imgLight");
             x.src = "light_on.png";
-            alert("불 켰어요");
+            alert("불을 켰습니다");
         }
-       
+
         /*
             끄기 버튼 클릭시
             아이디가 imgLight인 것을 찾아서
             이미지를 꺼진 이미지로 변경
+
+            <!--   --> html 주석
         */
+
         function lightOff() {
-            x = document.getElementById("imgLight");
-            x.src = "light_off.png";
-        }        
+            y = document.getElementById("imgLight");
+            y.src = "light_off.png";
+            alert("불을 껐습니다")
+        }
     </script>
-   
-    
 </body>
-
-
-
-            </html>
+</html>

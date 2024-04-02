@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>innerHTML</h1> <!-- h1 h2 h3 제목 -->
+    <h2 id="result" >여기에 결과 표시</h2>
+
+    <script>
+        var resultElement = document.getElementById("result");
+        window.alert(resultElement);
+        console.log(resultElement);
+        var v = resultElement.innerHTML;
+        console.log(v);
+
+        resultElement.innerHTML = "김세영님 반갑습니다."
+        document.write("김세영님 반갑습니다.")
+    </script>
+</body>
+</html>

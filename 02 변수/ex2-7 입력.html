@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1 id="h1Name">이름</h1>
+    <h1 id="h1Age">나이</h1>
+    <h1 id="h1NextAgeError">내년나이오류</h1>    
+    <h1 id="h1NextAge">내년나이</h1>
+
+    <script>
+        var name = prompt("이름을 입력해주세요.");
+        var age = prompt("나이를 입력해주세요.")
+
+        document.getElementById("h1Name").innerHTML = "이름:" + name;
+        document.getElementById("h1Age").innerHTML = "나이:" + age;
+        document.getElementById("h1NextAgeError").innerHTML = "내년나이오류:" + parseInt(age) + 1; // 311 출력됨
+        document.getElementById("h1NextAge").innerHTML = "내년나이:" + (parseInt(age) + 1); // 31 출력
+    </script>
+
+</body>
+</html>

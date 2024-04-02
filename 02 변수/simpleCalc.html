@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input id="inputNumber_1" type="text" placeholder="숫자를 입력해주세요."><br>
+    <input id="inputNumber_2" type="text" placeholder="숫자를 입력해주세요."><br>
+    <button onclick="hap()">+</button>
+    <button onclick="cha()">-</button>
+    <button onclick="gop()">*</button>
+    <button onclick="nanugi()">/</button>
+    <button onclick="cancle()">C</button><hr>
+    <input id="resultNumber" placeholder="결과가 출력됩니다.">
+
+    <script>
+        function hap() {
+            var number_1 = document.getElementById("inputNumber_1").value;
+            var number_2 = document.getElementById("inputNumber_2").value;
+            document.getElementById("resultNumber").value = parseInt(number_1) + parseInt(number_2)
+        }
+        function cha() {
+            var number_1 = document.getElementById("inputNumber_1").value;
+            var number_2 = document.getElementById("inputNumber_2").value;
+            document.getElementById("resultNumber").value = parseInt(number_1) - parseInt(number_2)
+        }
+        function gop() {
+            var number_1 = document.getElementById("inputNumber_1").value;
+            var number_2 = document.getElementById("inputNumber_2").value;
+            document.getElementById("resultNumber").value = parseInt(number_1) * parseInt(number_2)            
+        }
+        function nanugi() {
+            var number_1 = document.getElementById("inputNumber_1").value;
+            var number_2 = document.getElementById("inputNumber_2").value;
+            document.getElementById("resultNumber").value = parseInt(number_1) / parseInt(number_2)
+        }
+        function cancle() {
+            document.getElementById("resultNumber").value = ""
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>leksai</title>
+</head>
+<body>
+    <button onclick="p1()">평</button>
+    <button onclick="p2()">평</button>
+    <button onclick="p3()">평</button>
+    <img src="lek1.png" onclick="alert('버튼을 누르세요')" id="pyeang">
+
+    <script>
+        function p1() {
+            x = document.getElementById("pyeang");
+            x.src = "lek1.png";
+        }
+        function p2() {
+            y = document.getElementById("pyeang");
+            y.src = "lek2.png";
+        }
+        function p3() {
+            y = document.getElementById("pyeang");
+            y.src = "lek3.png";
+        }
+    </script>
+</body>
+</html>
